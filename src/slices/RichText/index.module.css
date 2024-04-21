@@ -1,3 +1,5 @@
+
+/* This file overrides the tailwind fonts we set in the prettier.config files. 
 .richtext {
   max-width: 600px;
   margin: 6em auto;
