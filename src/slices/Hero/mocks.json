@@ -1,25 +1,64 @@
 [
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "default",
-    "primary": {
-      "content": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Esse aliqua qui in qui duis nisi. Esse elit elit culpa cillum dolore eiusmod aliquip deserunt."
-            }
-          }
-        ]
-      }
-    },
-    "items": [
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": []
-      }
-    ]
-  }
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Trade"
+						}
+					}
+				]
+			},
+			"body_paragraph": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Irure nulla consectetur culpa exercitation culpa Lorem ut consectetur deserunt ea. Est nostrud aliquip non Lorem ad fugiat in fugiat do aute sint et."
+						}
+					}
+				]
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com"
+				}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "earth",
+				"type": "Text"
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+					"width": 4016,
+					"height": 6016
+				},
+				"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+				"width": 4016,
+				"height": 6016,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
 ]

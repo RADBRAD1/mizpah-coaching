@@ -1,29 +1,60 @@
 {
-  "id": "rich_text",
+  "id": "hero",
   "type": "SharedSlice",
-  "name": "RichText",
-  "description": "RichText",
+  "name": "Hero",
+  "description": "Hero",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
-      "version": "sktwi1xtmkfgx8626",
-      "description": "RichText",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
       "primary": {
-        "content": {
+        "heading": {
           "type": "StructuredText",
           "config": {
-            "label": "Content",
-            "placeholder": "Lorem ipsum...",
+            "label": "Heading",
+            "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,strong,em,hyperlink,embed,list-item",
-            "labels": ["codespan"]
+            "single": "heading1"
+          }
+        },
+        "body_paragraph": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body paragraph",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Button Label",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },
-      "items": {},
-      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+      "items": {}
     }
   ]
 }

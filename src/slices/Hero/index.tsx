@@ -1,38 +1,41 @@
-import type { Content } from "@prismicio/client";
-import { PrismicNextLink } from "@prismicio/next";
-import {
-  PrismicRichText,
-  SliceComponentProps,
-  JSXMapSerializer,
-} from "@prismicio/react";
-
-// import styles from "./index.module.css"; dont need since we invalidated index.module.css
-
-const components: JSXMapSerializer = {
-  hyperlink: ({ node, children }) => {
-    return <PrismicNextLink field={node.data}>{children}</PrismicNextLink>;
-  },
-  label: ({ node, children }) => {
-    if (node.data.label === "codespan") {
-      return <code>{children}</code>;
-    }
-  },
-};
+import Bounded from "@/components/Bounded";
+import ButtonLink from "@/components/ButtonLink";
+import StarGrid from "@/components/StarGrid";
+import { Content, isFilled } from "@prismicio/client";
+import { PrismicNextImage } from "@prismicio/next";
+import { PrismicRichText, PrismicText, SliceComponentProps } from "@prismicio/react";
 
 /**
- * Props for `RichText`.
+ * Props for `Hero`.
  */
-type RichTextProps = SliceComponentProps<Content.RichTextSlice>;
+export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 
 /**
- * Component for "RichText" Slices.
+ * Component for "Hero" Slices.
  */
-const RichText = ({ slice }: RichTextProps): JSX.Element => {
+const Hero = ({ slice }: HeroProps): JSX.Element => {
   return (
-    <section>
-      <PrismicRichText field={slice.primary.content} components={components} />
-    </section>
+    <Bounded className = "container"
+      data-slice-type={slice.slice_type}
+      data-slice-variation={slice.variation}
+    >
+      <div className="relative">
+     <StarGrid />
+     {isFilled.richText(slice.primary.heading) && ( 
+      <h1>
+      <PrismicText field={slice.primary.heading} />
+      </h1>
+     )}
+     
+     <PrismicRichText field={slice.primary.body_paragraph} />
+     <ButtonLink field={slice.primary.button_link}>
+      {slice.primary.button_label}
+      </ButtonLink>
+     <PrismicNextImage field={slice.primary.image} />
+     </div>
+    
+    </Bounded>
   );
 };
 
-export default RichText;
+export default Hero;
