@@ -6,7 +6,7 @@ import {
   JSXMapSerializer,
 } from "@prismicio/react";
 
-// import styles from "./index.module.css";
+// import styles from "./index.module.css"; dont need since we invalidated index.module.css
 
 const components: JSXMapSerializer = {
   hyperlink: ({ node, children }) => {
