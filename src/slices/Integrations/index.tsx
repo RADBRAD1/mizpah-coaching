@@ -7,8 +7,11 @@ import Image from "next/image";
 import background from './background.jpg'
 import {FaDigitalOcean, FaCloudflare, FaNpm, FaGithub, FaFigma, FaFly,} from "react-icons/fa6";
 import StylizedLogoMark from "./StylizedLogoMark";
+//can replace stylizedlogomark with own logo
+
 import React from "react";
 import clsx from "clsx";
+import { YBlogo } from "@/components/svgs";
 /**
  * Props for `Integrations`.
  */
@@ -58,7 +61,7 @@ const Integrations = ({ slice }: IntegrationsProps): JSX.Element => {
           <React.Fragment key = {index}>
             {index == Math.floor(slice.items.length/2) && (
               <> 
-              <StylizedLogoMark />
+              <YBlogo />
               <div className = "signal-line rotate-180 bg-gradient-to-t" />
               </>
             )}

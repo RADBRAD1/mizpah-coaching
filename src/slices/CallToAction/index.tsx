@@ -3,6 +3,7 @@ import { PrismicText, SliceComponentProps } from "@prismicio/react";
 import PlainLogo from "./PlainLogo";
 import Bounded from "@/components/Bounded";
 import ButtonLink from "@/components/ButtonLink";
+import { YBlogo } from "@/components/svgs";
 
 /**
  * Props for `CallToAction`.
@@ -23,10 +24,10 @@ const CallToAction = ({ slice }: CallToActionProps): JSX.Element => {
     /> 
   
     <div className="glasscontainer rounded-lg bg-gradient-to-b from-slate-800 to-slate-900 p-4 md:rounded-xl "> 
-     <PlainLogo/>
+     <YBlogo/>
     </div>
 
-    <div className="mt-8 max-w-xl text-5xl"> 
+    <div className="text-balance mt-8 max-w-xl text-5xl"> 
       <PrismicText field = {slice.primary.heading} />
     </div>
 
