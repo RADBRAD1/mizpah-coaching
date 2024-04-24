@@ -27,7 +27,7 @@ export default async function Page({ params }: { params: Params }) {
     //<bounded> defaults to a section, so we change it to as=article. 
   return ( 
     <Bounded as = "article"> 
-    <div className = "grid relative place-items-center text-center">   
+    <div className = "grid relative place-items-center text-center gap-8 lg:gap-0">   
         <StarGrid />
         <h1 className = "text-7xl font-medium">
             <PrismicText field = {page.data.company} />

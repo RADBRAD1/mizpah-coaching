@@ -34,7 +34,7 @@
 						"icon",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "Cloudflare",
+							"value": "npm",
 							"type": "Select"
 						}
 					]

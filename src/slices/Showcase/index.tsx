@@ -38,7 +38,7 @@ const Showcase = ({ slice }: ShowcaseProps): JSX.Element => {
           </h2>
         )
       }} />
-        <div className = "grid mt-16 items-center rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12"> 
+        <div className = "grid mt-16 items-center rounded-xl border border-blue-50/20 bg-gradient-to-b from-slate-50/15 to-slate-50/5 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12 gap-8 lg:gap-0 "> 
               <div> 
                 <div className = "w-fit rounded-lg bg-blue-500/35 p-4 text-3xl"> 
                 <>{slice.primary.icon && icons[slice.primary.icon]}</> 

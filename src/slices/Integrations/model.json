@@ -38,8 +38,8 @@
             "label": "Icon",
             "placeholder": "",
             "options": [
-              "Cloudflare",
-              "Npm",
+              "cloudflare",
+              "npm",
               "github",
               "figma",
               "digitalocean",
