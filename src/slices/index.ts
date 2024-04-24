@@ -3,5 +3,9 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  bento: dynamic(() => import("./Bento")),
+  case_study: dynamic(() => import("./CaseStudy")),
   hero: dynamic(() => import("./Hero")),
+  rich_text: dynamic(() => import("./RichText")),
+  showcase: dynamic(() => import("./Showcase")),
 };

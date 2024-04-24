@@ -3,6 +3,8 @@
 
 //the paths and numbers are svgs, which is an image exported from figma
 // and compressed with values plugged in such as width = {170}
+
+/*
 export default function WordMark() {
     return (
         <svg width="181" height="169" viewBox="0 0 181 169" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,4 +93,4 @@ export default function WordMark() {
         </svg>
     );
   }
-  
+  */

@@ -14,17 +14,6 @@
 					}
 				]
 			},
-			"body_paragraph": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Irure nulla consectetur culpa exercitation culpa Lorem ut consectetur deserunt ea. Est nostrud aliquip non Lorem ad fugiat in fugiat do aute sint et."
-						}
-					}
-				]
-			},
 			"button_link": {
 				"__TYPE__": "LinkContent",
 				"value": {
@@ -38,7 +27,6 @@
 				"type": "Text"
 			},
 			"image": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
@@ -56,7 +44,21 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Fugiat sit enim veniam ipsum cillum et eiusmod occaecat commodo."
+						}
+					}
+				]
 			}
 		},
 		"items": []

@@ -16,6 +16,8 @@ module.exports = {
         sans: ['var(--font-dm-sans)'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 }

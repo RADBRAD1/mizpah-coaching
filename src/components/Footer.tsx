@@ -1,7 +1,9 @@
-import WordMark from "@/components/WordMark";
+//import WordMark from "@/components/WordMark";
 import { createClient } from "@/prismicio"; //not prismic client import, handles fetching data, previes, etc. handles caching and has routes.  
 import { PrismicNextLink } from "@prismicio/next";
 import Link from "next/link";
+import { YBlogo } from "./svgs";
+
 
 export default async function Footer() {
   const client = createClient();
@@ -9,7 +11,7 @@ export default async function Footer() {
   return (
     <footer className = "flex flex-col items-center justify-between gap-6 border-t border-slate-600 px-8 py-7 md:flex-row">
       <Link href ="/">
-        <WordMark />
+        <YBlogo/>
         <span> Your Brother Home Page</span>
         </Link>
         <nav aria-label = "Footer">
