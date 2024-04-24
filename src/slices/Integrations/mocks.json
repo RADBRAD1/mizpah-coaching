@@ -1,0 +1,45 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Anyway"
+						}
+					}
+				]
+			},
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nulla aliquip ullamco culpa nulla nulla consequat aliqua. Ex irure aliquip laborum veniam eiusmod cupidatat laboris adipisicing aute mollit. Culpa occaecat cillum proident qui velit sit elit tempor fugiat sint irure."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "Cloudflare",
+							"type": "Select"
+						}
+					]
+				]
+			}
+		]
+	}
+]
