@@ -35,4 +35,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.github/workflows/deploy-aws.yml
+/.github/workflows/deploy-aws.yml
+/postcss.config.js
