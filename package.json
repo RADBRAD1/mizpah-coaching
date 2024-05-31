@@ -1,7 +1,7 @@
 {
   "name": "nextjs-starter-prismic-minimal-ts",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "license": "Apache-2.0",
   "author": "Prismic <contact@prismic.io> (https://prismic.io)",
   "scripts": {
