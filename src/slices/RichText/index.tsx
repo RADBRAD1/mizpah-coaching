@@ -26,6 +26,7 @@ export default function RichText({ slice }: RichTextProps) {
           components={components}
         />
       </div>
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45925352.js"></script>
     </Bounded>
   );
 }

@@ -55,6 +55,7 @@ const Bento = ({ slice }: BentoProps): JSX.Element => {
           </div>
         ))}
       </div>
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45925352.js"></script>
     </Bounded>
   );
 };
