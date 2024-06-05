@@ -24,22 +24,7 @@ export default function RootLayout({
     <html lang="en" className = {dm_sans.variable}>
       <body className = "bg-[#070815] text-white">
         <Header />
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-KCLY47Q7F0`}/>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-KCLY47Q7F0', {
-              page_path: window.location.pathname,
-            });
-          `,
-          }}
-        />
-
+    
         <main> 
           {children}
         </main>
