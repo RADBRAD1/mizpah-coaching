@@ -11,3 +11,5 @@ export const components = {
   rich_text: dynamic(() => import("./RichText")),
   showcase: dynamic(() => import("./Showcase")),
 };
+
+//g

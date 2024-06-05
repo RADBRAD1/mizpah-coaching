@@ -7,7 +7,9 @@ export default async function Header() {
 
   return (
     <header> 
+
         <NavBar settings={settings} />
+
     </header>
   )
 }
