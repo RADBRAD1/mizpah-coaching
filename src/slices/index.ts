@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 
 export const components = {
   bento: dynamic(() => import("./Bento")),
+  booking: dynamic(() => import("./Calendar")),
   call_to_action: dynamic(() => import("./CallToAction")),
   case_study: dynamic(() => import("./CaseStudy")),
   hero: dynamic(() => import("./Hero")),
@@ -11,5 +12,3 @@ export const components = {
   rich_text: dynamic(() => import("./RichText")),
   showcase: dynamic(() => import("./Showcase")),
 };
-
-//g

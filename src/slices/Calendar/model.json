@@ -1,0 +1,18 @@
+{
+  "id": "booking",
+  "type": "SharedSlice",
+  "name": "Calendar",
+  "description": "Booking",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {}
+    }
+  ]
+}
