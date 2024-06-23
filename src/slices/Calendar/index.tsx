@@ -1,3 +1,5 @@
+import Bounded from "@/components/Bounded";
+import CalendlyForm from "@/components/CalendlyForm";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 
@@ -11,12 +13,11 @@ export type BookingProps = SliceComponentProps<Content.BookingSlice>;
  */
 const Booking = ({ slice }: BookingProps): JSX.Element => {
   return (
-    <section
+    <Bounded
       data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
-    >
-      Placeholder component for booking (variation: {slice.variation}) Slices
-    </section>
+      data-slice-variation={slice.variation} >
+     <CalendlyForm/> 
+    </Bounded>
   );
 };
 
