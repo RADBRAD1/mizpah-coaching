@@ -386,6 +386,31 @@ type BentoSliceVariation = BentoSliceDefault;
 export type BentoSlice = prismic.SharedSlice<"bento", BentoSliceVariation>;
 
 /**
+ * Primary content in *Calendar → Default → Primary*
+ */
+export interface BookingSliceDefaultPrimary {
+  /**
+   * Heading field in *Calendar → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: booking.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Calendar field in *Calendar → Default → Primary*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: booking.default.primary.calendar
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  calendar: prismic.ContentRelationshipField;
+}
+
+/**
  * Default variation for Calendar Slice
  *
  * - **API ID**: `default`
@@ -394,7 +419,7 @@ export type BentoSlice = prismic.SharedSlice<"bento", BentoSliceVariation>;
  */
 export type BookingSliceDefault = prismic.SharedSliceVariation<
   "default",
-  Record<string, never>,
+  Simplify<BookingSliceDefaultPrimary>,
   never
 >;
 
@@ -968,6 +993,7 @@ declare module "@prismicio/client" {
       BentoSliceVariation,
       BentoSliceDefault,
       BookingSlice,
+      BookingSliceDefaultPrimary,
       BookingSliceVariation,
       BookingSliceDefault,
       CallToActionSlice,

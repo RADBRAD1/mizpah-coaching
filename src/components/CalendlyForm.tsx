@@ -18,7 +18,7 @@ const CalendlyForm = ({ type }: { type?: string }) => {
         <>
             <div className="calendly-inline-widget" data-url="https://calendly.com/christopherligeorge" style={{ minWidth: '320px', height: '700px' }}> </div>
         </>
-    );
+    ); 
 
 }
 

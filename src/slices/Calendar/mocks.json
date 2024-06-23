@@ -2,7 +2,26 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Est esse magna nulla qui laboris ullamco dolor tempor dolore incididunt cupidatat cupidatat tempor dolore sit. Minim enim tempor excepteur pariatur esse id ad nostrud et est. Eiusmod irure pariatur nisi eu cillum mollit mollit aute."
+						}
+					}
+				]
+			},
+			"calendar": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "DocumentLink",
+					"id": "mock_document_id"
+				}
+			}
+		},
 		"items": []
 	}
 ]
