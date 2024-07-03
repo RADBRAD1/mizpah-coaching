@@ -33,3 +33,27 @@ export default async function Index() {
 
   return <SliceZone slices={home.data.slices} components={components} />;
 }
+
+/* app/page.js, client side implenetation of AB test
+'use client'
+import { usePostHog } from 'posthog-js/react'
+import { useEffect, useState } from 'react'
+
+export default function Home() {
+  const posthog = usePostHog()
+  const [text, setText] = useState('')
+
+  useEffect(() => {
+    const flag = posthog.getFeatureFlag('main-cta')
+    setText(flag === 'test' ? 'Click this button for free money' : 'Click me');
+  }, [])
+
+  return (
+    <main>
+      <h1>Next.js A/B tests</h1>
+      <button id="main-cta">{text}</button>
+    </main>
+  )
+}
+
+*/

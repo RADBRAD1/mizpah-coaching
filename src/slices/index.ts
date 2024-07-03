@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 
 export const components = {
+  appointments: dynamic(() => import("./Appointments")),
   bento: dynamic(() => import("./Bento")),
   booking: dynamic(() => import("./Calendar")),
   call_to_action: dynamic(() => import("./CallToAction")),

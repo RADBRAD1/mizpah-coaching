@@ -15,7 +15,7 @@ const Booking = ({ slice }: BookingProps): JSX.Element => {
   return (
     <Bounded
       data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation} >
+      data-slice-variation={slice.variation}   >
      <CalendlyForm/> 
     </Bounded>
   );

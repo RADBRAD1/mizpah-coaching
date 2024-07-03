@@ -1,8 +1,8 @@
 {
-  "id": "booking",
+  "id": "appointments",
   "type": "SharedSlice",
-  "name": "Calendar",
-  "description": "Booking",
+  "name": "Appointments",
+  "description": "Appointments",
   "variations": [
     {
       "id": "default",
@@ -18,13 +18,20 @@
             "label": "Heading",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "multi": "heading2,em,strong"
           }
         },
-        "calendar": {
+        "button_text": {
+          "type": "Text",
+          "config": {
+            "label": "Button Text",
+            "placeholder": ""
+          }
+        },
+        "button_link": {
           "type": "Link",
           "config": {
-            "label": "Calendar",
+            "label": "Button Link",
             "placeholder": "",
             "select": null
           }

@@ -20,8 +20,7 @@ export default async function Header() {
               page_path: window.location.pathname,
             });
           `,
-          }}
-        />
+          }}/>
         <NavBar settings={settings} />
 
     </header>

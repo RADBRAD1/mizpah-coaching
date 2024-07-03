@@ -103,6 +103,7 @@ export type CaseStudyDocument<Lang extends string = string> =
   >;
 
 type PageDocumentDataSlicesSlice =
+  | BookingSlice
   | CallToActionSlice
   | IntegrationsSlice
   | RichTextSlice
@@ -288,6 +289,71 @@ export type AllDocumentTypes =
   | SettingsDocument;
 
 /**
+ * Primary content in *Appointments → Default → Primary*
+ */
+export interface AppointmentsSliceDefaultPrimary {
+  /**
+   * Heading field in *Appointments → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: appointments.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.RichTextField;
+
+  /**
+   * Button Text field in *Appointments → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: appointments.default.primary.button_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_text: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Appointments → Default → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: appointments.default.primary.button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField;
+}
+
+/**
+ * Default variation for Appointments Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AppointmentsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<AppointmentsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Appointments*
+ */
+type AppointmentsSliceVariation = AppointmentsSliceDefault;
+
+/**
+ * Appointments Shared Slice
+ *
+ * - **API ID**: `appointments`
+ * - **Description**: Appointments
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AppointmentsSlice = prismic.SharedSlice<
+  "appointments",
+  AppointmentsSliceVariation
+>;
+
+/**
  * Primary content in *Bento → Default → Primary*
  */
 export interface BentoSliceDefaultPrimary {
@@ -402,12 +468,12 @@ export interface BookingSliceDefaultPrimary {
   /**
    * Calendar field in *Calendar → Default → Primary*
    *
-   * - **Field Type**: Content Relationship
+   * - **Field Type**: Link
    * - **Placeholder**: *None*
    * - **API ID Path**: booking.default.primary.calendar
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  calendar: prismic.ContentRelationshipField;
+  calendar: prismic.LinkField;
 }
 
 /**
@@ -987,6 +1053,10 @@ declare module "@prismicio/client" {
       SettingsDocumentData,
       SettingsDocumentDataNavigationItem,
       AllDocumentTypes,
+      AppointmentsSlice,
+      AppointmentsSliceDefaultPrimary,
+      AppointmentsSliceVariation,
+      AppointmentsSliceDefault,
       BentoSlice,
       BentoSliceDefaultPrimary,
       BentoSliceDefaultItem,

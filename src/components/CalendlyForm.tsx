@@ -16,10 +16,11 @@ const CalendlyForm = ({ type }: { type?: string }) => {
 
     return (
         <>
-            <div className="calendly-inline-widget" data-url="https://calendly.com/christopherligeorge" style={{ minWidth: '320px', height: '700px' }}> </div>
+            <InlineWidget url = "https://calendly.com/christopherligeorge"/> 
         </>
     ); 
 
+
 }
 
-export default CalendlyForm
+export default CalendlyForm;
